@@ -1,0 +1,23 @@
+{
+  "name": "node-js-sample",
+  "version": "0.2.0",
+  "description": "A sample Node.js app using Express 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bulma": "^0.6.1",
+    "chat-bubble": "^1.2.3"
+  },
+  "engines": {},
+  "repository": {},
+  "keywords": [
+    "portfolio",
+    "aws",
+    "cloud"
+  ],
+  "author": "Omer Tarik Koc",
+  "license": "MIT"
+}

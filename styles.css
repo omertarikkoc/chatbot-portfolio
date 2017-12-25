@@ -1,0 +1,54 @@
+#chat-section {
+    background:linear-gradient(145deg, #01d1b2, #e196ff);
+    height: 100vh;
+}
+
+#chat {
+    height: 90vh;
+    /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); */
+}
+.bubble-container {
+    background: transparent;
+}
+
+/* for mobile */
+#navbar-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navbar {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.nav-brand {
+    display: inline-block;
+}
+
+.nav-brand h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nav-links{
+    display: inline-block;
+    position: absolute;
+    top: 10;
+    right: 10;
+}
+
+/* For Desktop */
+@media only screen and (min-width: 768px) {
+    .navbar{
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+    .nav-brand {
+        display: inline-block;
+    }
+    .nav-links {
+        float: right;
+    }
+     
+}

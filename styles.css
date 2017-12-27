@@ -39,8 +39,8 @@
 .nav-links{
     display: inline-block;
     position: absolute;
-    top: 10;
-    right: 10;
+    top: 10px;
+    right: 10px;
 }
 
 /* For Desktop */
@@ -58,8 +58,47 @@
 }
 .portfolio-section{
     background: #01d1b2;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .portfolio-item{
     width: 300px;
     height: 300px;
+}
+
+#projectsButton {
+    /* display: none; */
+}
+
+.general-button{
+    background: rgba(44, 44, 44, 0.67);
+	color: #fff;
+	padding: 8px 16px;
+	border-radius: 15px 15px 5px 5px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: block;
+    width: 50%;
+    transition: all 200ms;
+    cursor: pointer;
+	/* display: inline-block;
+	cursor: pointer;
+	transition: all 200ms;
+	text-decoration: none;
+	word-break: normal;
+	animation-duration: 1s;
+	animation-name: animate-reply;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	transform: translate3d(0px, 0px, 0px); */
+}
+
+.general-button:hover {
+    background: rgba(44, 44, 44, 1);
+    transform: scale(1) translate3d(0px, 0px, 0px);
+    padding: 8px 16px;
+    height: auto;
+    cursor: pointer;
 }

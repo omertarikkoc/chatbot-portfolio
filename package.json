@@ -4,7 +4,8 @@
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "server-start": "browser-sync start --server --files '*.html, css/*css'"
   },
   "dependencies": {
     "chat-bubble": "^1.2.3",

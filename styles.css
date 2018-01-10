@@ -1,7 +1,15 @@
 /* General Classes */
+
+body {
+    font-family: 'Josefin Sans', sans-serif !important;
+    line-height: 1.7rem;
+}
+
 .container { 
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 #chat-section {
     background:linear-gradient(145deg, #01d1b2, #e196ff);
@@ -43,8 +51,33 @@
     right: 10px;
 }
 
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover {
+    border-radius: 10%;
+    color: white;
+    background-color: #01d1b2;
+    transition: all 200ms ease-in;
+}
+
 /* For Desktop */
 @media only screen and (min-width: 768px) {
+    body {
+        font-size: 1.3rem !important;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .container {
+        margin: 0 auto;
+        position: relative;
+        max-width: 750px;
+        padding-left: 0;
+        padding-right: 0;
+    }
     .navbar{
         padding-left: 1.2rem;
         padding-right: 1.2rem;
@@ -55,9 +88,16 @@
     .nav-links {
         float: right;
     }     
+    .nav-links a {
+        padding: 5px;
+    }
+
+    .nav-links a:hover {
+        padding: 5px;
+    }
     .center-margin {
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 .portfolio-section{
@@ -143,7 +183,7 @@
   .icon-link {
       margin: 5px;
       text-decoration: none;
-      color: blue;
+      color:  blue;
   }
 
   .icon-link:hover {

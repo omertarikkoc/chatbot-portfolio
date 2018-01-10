@@ -95,7 +95,7 @@
 		projectsFunction = function () {
             givemeBubbles.talk(convo, "projects"); // Continue conversation
 
-            var portfolioPosition = document.getElementById("portfolio-section"); // Get the portfolio element
+            var portfolioPosition = document.getElementById("projects"); // Get the portfolio element
             portfolioPosition.scrollIntoView({block: 'end',  behaviour: 'smooth'}); // Scroll down to the element
 
             isProjectsChecked = true; // Change the flag to show the button

@@ -23,6 +23,9 @@
 		<!-- Add the slick-theme.css if you want default styling -->
 		<link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css" />
 
+		<!-- stylesheets for swiper -->
+		<link rel="stylesheet" type="text/css" href="./node_modules/swiper/dist/css/swiper.css" />
+
 		<!-- Custom Styles -->
 		<link rel="stylesheet" media="all" href="./styles.css">
 
@@ -53,71 +56,124 @@
 
 		<!-- About Section -->
 		<div class="container">
-			<div id="about">
-				<h2>About</h2>
+			<div id="about" class="center-margin">
+				<h2 class="center-text">About</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae lectus ipsum. Phasellus blandit lacus id fermentum
-					pellentesque. Aliquam vitae sem lacus. Nulla quam nibh, facilisis aliquam eros ac, auctor vestibulum lorem. Donec feugiat
-					felis eu fringilla porta. Nunc pellentesque dui in viverra fermentum. Duis tempus viverra lobortis. Phasellus vulputate
-					eros ut tellus imperdiet, id pellentesque neque lobortis. Pellentesque eu diam posuere ante luctus efficitur. Praesent
-					commodo vitae augue finibus scelerisque. Sed pulvinar suscipit nisl, vitae venenatis lorem luctus eget. Duis porttitor,
-					ipsum quis congue condimentum, eros urna pharetra ante, et ornare ex enim non libero. 88 Vivamus pharetra diam convallis
-					orci molestie, facilisis tincidunt quam sagittis. Vestibulum dignissim odio felis, a sagittis libero efficitur ac. Curabitur
-					diam urna, rutrum porta efficitur a, imperdiet aliquet neque. Duis sagittis vehicula purus, non posuere risus lacinia
-					non. Phasellus tellus tellus, fermentum nec justo eget, ullamcorper auctor odio. Integer libero lacus, fermentum at urna
-					in, laoreet interdum elit. Sed vehicula volutpat dui sed placerat. Vestibulum dapibus, diam sagittis varius condimentum,
-					velit ex dapibus neque, in faucibus ex sapien at libero.
+					I am Omer Tarik! <br>
+					I love computer science and this is my personal website. <br>
+					Currently, I am graduating from a two-year community college and transferring a four-year university Fall 2018. <br>
+					I would like to create more projects and need your support to get a scholarship! <br>
+					More details about my education and professional experience can be found in my resume and my projects <br>
+					Feel free to chat me and explore this page more! <br>
 				</p>
 			</div>
 		</div>
 
 		<!--Portfolio Section-->
-		<div class="portfolio-section" id="portfolio-section">
+		<!-- <div class="portfolio-section" id="portfolio-section">
 			<div class="container">
 				<h2>Portfolio</h2>
-				<div id="portfolio">
-					<div class="portfolio-item">
-						<img src="http://lorempixel.com/300/300/sports/" alt="">
-						<h2>Test1</h2>
-						<p></p>
+				<div id="slides">
+					<div class="portfolio-item slides-container">
+						<div class="box">
+							<a href="https://studentsharp.com" target="_blank">
+								<h3>Student Sharp (Wordpress, HTML&CSS)</h3>
+								<img class="portfolio-image" src="./img/portfolio/01-studentsharp.png" alt="">
+								<p>This is an example</p>
+							</a>
+						</div>
+					</div>		
+					<div class="portfolio-item slides-container">
+							<div class="box">
+								<a href="https://studentsharp.com" target="_blank">
+									<h3>Student Sharp (Wordpress, HTML&CSS)</h3>
+									<img class="portfolio-image" src="./img/portfolio/01-studentsharp.png" alt="">
+									<p>This is an example</p>
+								</a>
+							</div>
 					</div>
-					<div class="portfolio-item">
-						<img src="http://lorempixel.com/300/300/nature/" alt="">
-						<h2>Test2</h2>
-						<p></p>
-					</div>
-					<div class="portfolio-item">
-						<img src="http://lorempixel.com/300/300/city/" alt="">
-						<h2>Test3</h2>
-						<p></p>
-					</div>
-					<div class="portfolio-item">
-						<img src="http://lorempixel.com/300/300/" alt="">
-						<h2>Test4</h2>
-						<p></p>
-					</div>
-					<div class="portfolio-item">
-						<img src="http://lorempixel.com/300/300/" alt="">
-						<h2>Test5</h2>
-						<p></p>
-					</div>
+					<div class="portfolio-item slides-container">
+							<div class="box">
+								<a href="https://studentsharp.com" target="_blank">
+									<h3>Student Sharp (Wordpress, HTML&CSS)</h3>
+									<img class="portfolio-image" src="./img/portfolio/01-studentsharp.png" alt="">
+									<p>This is an example</p>
+								</a>
+							</div>
+					</div>		
 				</div>
 				<span id="projectsButton" class="general-button"> Continue the chat </span>
 			</div>
+		</div> -->
+
+		<!-- Swiper -->	
+		<div class="swiper-container" >
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide" id="projects">
+					  <div>
+						<span id="projectsButton" class="general-button"> Continue the chat </span>
+						<h3>Student Sharp</h3>
+						<img class="portfolio-image" src="./img/portfolio/01-studentsharp.png" alt="">
+						<p>Wordpress</p>
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>
+							<a href="https://studentsharp.com" target="_blank"><i class="fa fa-link fa-2x icon-link"></i></a>
+							<a href="https://studentsharp.com" target="_blank"><i class="fa fa-github fa-2x icon-link"></i></a>
+						</p>
+					</div>
+				  </div>
+				  <div class="swiper-slide">Student Sharp (Wordpress, HTML&CSS) Student Sharp (Wordpress, HTML&CSS)</div>
+				  <div class="swiper-slide">Slide 3</div>
+				  <div class="swiper-slide">Slide 4</div>
+				  <div class="swiper-slide">Slide 5</div>
+				  <div class="swiper-slide">Slide 6</div>
+				  <div class="swiper-slide">Slide 7</div>
+				  <div class="swiper-slide">Slide 8</div>
+				  <div class="swiper-slide">Slide 9</div>
+				  <div class="swiper-slide">Slide 10</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 		</div>
+
+		<div class="container">
+				<div class="center-margin">
+					<h2 class="center-text">Resume</h2>
+				</div>
+		</div>
+		
 
 		<!--JQuery-->
 		<script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
 
-		<!--JS for Slick Slider-->
-		<script type="text/javascript" src="./node_modules/slick-carousel/slick/slick.min.js"></script>
+		<!--JS for Swiper-->
+		<script type="text/javascript" src="./node_modules/swiper/dist/js/swiper.js"></script>
 
 		<!-- Chat Conversation Logic -->
 		<script type="text/javascript" src="./js/chat.js"></script>
 
 		<!-- Jquery Helper Functions for scrollig and buttons-->
 		<script type="text/javascript" src="./js/jqueryHelpers.js"></script>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+		var swiper = new Swiper('.swiper-container', {
+		  pagination: {
+			el: '.swiper-pagination',
+			type: 'fraction',
+		  },
+		  navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		  },
+		});
+	  </script>
 	
 	</body>
 </html>

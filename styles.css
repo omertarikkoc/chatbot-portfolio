@@ -55,6 +55,10 @@
     .nav-links {
         float: right;
     }     
+    .center-margin {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
 }
 .portfolio-section{
     background: #01d1b2;
@@ -102,3 +106,47 @@
     height: auto;
     cursor: pointer;
 }
+@media only screen and (max-width: 768px) {
+    .portfolio-image {
+        max-width: 450px;
+    }
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: rgba(228, 223, 223, 0.897);
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .center-text {
+      text-align: center;
+  }
+
+  .icon-link {
+      margin: 5px;
+      text-decoration: none;
+      color: blue;
+  }
+
+  .icon-link:hover {
+      transition: all 200ms ease-in;
+      transform: scale(2);
+  }

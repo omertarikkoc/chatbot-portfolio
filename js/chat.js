@@ -3,13 +3,12 @@
 		    "ice": { // default conversation block for the bot to start, this key is9 required.
 		        "says": [ // you can have array of text bubbles here
 		            "Hi, I'm Omer Tarik 👋 It is good to see you in my website!",
-		            "<img src=\"https://scontent.fhou1-1.fna.fbcdn.net/v/t31.0-8/22528786_10214348103994243_7281425222001538778_o.jpg?oh=74e1176e28849b385c0812d5417d5561&oe=5ACA9756\"/>",
+		            "<img src=\".\/img\/omer.jpg\" \/>",
 		            "Currently, I am seeking a transfer scholarship to a university as a Computer Science major in US.",
-		            "Select your side to continue :)"
 		        ],
 		        "reply": [ // this is an array of possible answers that user can pick. 3 or less options recommended.
 		            {
-		                "question": "Support scholarsip", // this is the text label for one of the options
+		                "question": "Help you with the scholarship", // this is the text label for one of the options
 		                "answer": "scholarship", // this is the reference for next block in this conversation (see below)
 		            },
 		            {
@@ -20,35 +19,40 @@
 		    },
 		    "scholarship": { // this is another conversation block, to which the chat bot can be sent (see above ^^)
 		        "says": [ // you can have array of text bubbles here
-		            "🍌",
+					"It's been my dream to get a Computer Science degree ever since I came to the US.",
+					"That's why I am doing a crowdfunding campaign in which you can donate any amount you want to help me pay my college tuition. ",
+					"If you are a decision maker in any scholarship application that I have applied for please use this website as my innovative personal statement :)"
+		        ],
+		        "reply": [ // this is an array of possible answers that user can pick. 3 or less options recommended.
+		            {
+		                "question": "I want to fund your campaign", // this is the text label for one of the options
+		                "answer": "fundingFunction", // you can sent the user back to the original (first) conversation block
+					},
+					{
+		                "question": "I want to learn more about you", // this is the text label for one of the options
+		                "answer": "learn-more", // you can sent the user back to the original (first) conversation block
+		            },
+		        ]
+			},
+
+			"funding": { // this is another conversation block, to which the chat bot can be sent (see above ^^)
+		        "says": [ // you can have array of text bubbles here
+					"Thank you so much!",
+					"The site for the funding will be open shortly.",
+					"If it is not open please <a href=\"https:\/\/www.gofundme.com\/omertarikkoc\" target=\"_blank\"> click here<\/a> to open."
 		        ],
 		        "reply": [ // this is an array of possible answers that user can pick. 3 or less options recommended.
 		            {
 		                "question": "Start Over", // this is the text label for one of the options
 		                "answer": "ice", // you can sent the user back to the original (first) conversation block
-		            },
+					},
 		        ]
-		    },
+			},
+			
 		    "learn-more": { // this is another conversation block, to which the chat bot can be sent (see above ^^)
 		        "says": [ // you can have array of text bubbles here
 		            "Great!",
-		            "Which side of me do you want to learn?"
-		        ],
-		        "reply": [ // this is an array of possible answers that user can pick. 3 or less options recommended.
-		            {
-		                "question": "Professional", // this is the text label for one of the options
-		                "answer": "professional", // you can sent the user back to the original (first) conversation block
-		            },
-		            {
-		                "question": "Social", // this is the text label for one of the options
-		                "answer": "social", // you can sent the user back to the original (first) conversation block
-		            },
-		        ]
-		    },
-		    "professional": { // this is another conversation block, to which the chat bot can be sent (see above ^^)
-		        "says": [ // you can have array of text bubbles here
-		            "Perfect! 😊",
-		            "You can have a look at my projects or my resume"
+		            "What do you want to know? "
 		        ],
 		        "reply": [ // this is an array of possible answers that user can pick. 3 or less options recommended.
 		            {
@@ -60,7 +64,8 @@
 		                "answer": "resume", // you can sent the user back to the original (first) conversation block
 		            },
 		        ]
-		    },
+			},
+			
 		    "projects": { // this is another conversation block, to which the chat bot can be sent (see above ^^)
 		        "says": [ // you can have array of text bubbles here
 		            "Cool!",
@@ -71,9 +76,39 @@
 		                "question": "I am ready, show your projects!", // this is the text label for one of the options
 		                "answer": "projectsFunction", // you can sent the user back to the original (first) conversation block
 		            },
+		        ]
+			},
+			
+			"after-projects": { // this is another conversation block, to which the chat bot can be sent (see above ^^)
+		        "says": [ // you can have array of text bubbles here
+		            "You have seen my projects!",
+		            "What do you want to do next?"
+		        ],
+		        "reply": [ // this is an array of possible answers that user can pick. 3 or less options recommended.
 		            {
-		                "question": "Resume", // this is the text label for one of the options
+		                "question": "Show me your resume!", // this is the text label for one of the options
 		                "answer": "resume", // you can sent the user back to the original (first) conversation block
+					},
+					{
+		                "question": "Help you with the scholarship", // this is the text label for one of the options
+		                "answer": "scholarship", // you can sent the user back to the original (first) conversation block
+		            },
+		        ]
+			},
+			
+			"resume": { // this is another conversation block, to which the chat bot can be sent (see above ^^)
+		        "says": [ // you can have array of text bubbles here
+		            "Simply <a href=\".\/docs\/OmerTarikKoc_Resume_last.pdf\" target=\"_blank\"> click here<\/a> and download will start shortly.",
+		            "What do you want to do next?"
+		        ],
+		        "reply": [ // this is an array of possible answers that user can pick. 3 or less options recommended.
+		            {
+		                "question": "I want to see your projects", // this is the text label for one of the options
+		                "answer": "projects", // you can sent the user back to the original (first) conversation block
+					},
+					{
+		                "question": "Help you with the scholarship", // this is the text label for one of the options
+		                "answer": "scholarship", // you can sent the user back to the original (first) conversation block
 		            },
 		        ]
 		    },
@@ -93,13 +128,18 @@
         var isResumeChecked = false;
 
 		projectsFunction = function () {
-            givemeBubbles.talk(convo, "projects"); // Continue conversation
+            givemeBubbles.talk(convo, "after-projects"); // Continue conversation
 
             var portfolioPosition = document.getElementById("projects"); // Get the portfolio element
             portfolioPosition.scrollIntoView({block: 'end',  behaviour: 'smooth'}); // Scroll down to the element
 
             isProjectsChecked = true; // Change the flag to show the button
-		    $('#projectsButton').show("slow");
+		    $('.projectsButton').show("slow");
 		    // givemeBubbles.reply("projects");
             
+		}
+
+		fundingFunction = function () {
+			givemeBubbles.talk(convo, "funding");
+			setTimeout(function() {window.open("https://www.gofundme.com/omertarikkoc",'_blank');}, 5000)
 		}

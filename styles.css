@@ -5,6 +5,11 @@ body {
     line-height: 1.7rem;
 }
 
+.logo {
+    max-width: 50px;
+    padding-top: 5px;
+}
+
 .container { 
     padding-left: 2rem;
     padding-right: 2rem;
